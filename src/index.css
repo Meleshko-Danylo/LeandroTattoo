@@ -7,6 +7,64 @@
   @apply object-cover rounded-2xl shadow-lg shadow-indigo-400/50
 }
 
+.appear {
+  opacity: 0;
+  scale: 0.5;
+  transition: opacity 0.5s ease, scale 0.5s ease;
+}
+
+.appear.is-visible {
+  opacity: 1;
+  scale: 1;
+}
+
+#content > div{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.contact-enter-line{
+  width: 100%;
+  height: 1rem;
+  background-color: transparent;
+  border: azure 1px solid;
+  border-radius: 10px;
+}
+
+.contact-enter-line::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.6rem;
+  position: absolute;
+  top: 0.4em;
+  left: 0;
+  z-index: 5;
+  background-color: rgb(3,7,18);
+}
+
+.reference-box-pw{
+  background: linear-gradient(to right, white, mediumpurple) padding-box, linear-gradient(to right, mediumpurple, white) border-box;
+  border-color: transparent;
+  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-5 cursor-pointer border-2
+}
+
+.reference-box-rw{
+  background: linear-gradient(to right, white, darkred) padding-box, linear-gradient(to right, darkred, white) border-box;
+  border-color: transparent;
+  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-5 cursor-pointer border-2
+}
+
+.bg-lg-po{
+  background: linear-gradient(to right, mediumpurple, orange);
+}
+
+.text-po{
+  background: linear-gradient(to right, mediumpurple, orange);
+  background-clip: text;
+  color: transparent;
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

@@ -1,6 +1,5 @@
-﻿import React, {useState} from 'react';
+﻿import React from 'react';
 import {Button} from "@/Components/ui/button.tsx";
-import { FaSquareInstagram } from "react-icons/fa6";
 import tattoo_1_img from "../assets/tattoo_1.png";
 import tattoo_2_img from "../assets/tattoo_2.png";
 import tattoo_3_img from "../assets/tattoo_3.png";
@@ -11,23 +10,13 @@ import tattoo_7_img from "../assets/tattoo_7.png";
 
 
 const Home = () => {
-    const [buttonHover, setButtonHover] = useState({
-        instagramHovered: false,
-    });
+    
     return (
-        <div className={"flex flex-col justify-center items-center mt-[5rem]"}>
-            <div id={"title"} className={"pt-[4rem] max-w-[35vw] text-center flex flex-col gap-12"}>
-                <span className={"text-[var(--color-muted))] text-6xl"}>
+        <div id={"home"} className={"flex flex-col justify-center items-center mt-20 scroll-mt-20 appear"}>
+            <div id={"title"} className={"pt-16 max-w-[35vw] text-center flex flex-col gap-12"}>
+                <span className={"text-po text-6xl"}>
                     I'll help you find the right project for you
                 </span>
-                <div className={"flex justify-center items-center"}>
-                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/leandrotattooextreme/" 
-                       className={"max-w-10 h-auto"} onMouseLeave={() => setButtonHover({instagramHovered: false})} 
-                       onMouseEnter={() => setButtonHover({instagramHovered: true})}>
-                        <FaSquareInstagram className={"w-12 h-12 fill-current"} 
-                                           color={`${buttonHover.instagramHovered ? "var(--color-muted)" : "var(--color-sidebar-border)"}`}/>
-                    </a>
-                </div>
             </div>
             <div id={"set-of-images"} className={"flex w-screen justify-center items-center gap-5 overflow-hidden pb-4"}>
                 <img src={tattoo_1_img} alt="tattoo" className={"min-w-[18vw] h-[50vh] img"}
@@ -45,7 +34,7 @@ const Home = () => {
                      style={{transform: "perspective(1000px) rotateY(-25deg)"}}/>
             </div>
             <div>
-                <Button className={"bg-red-600 hover:bg-red-700 rounded-3xl cursor-pointer scale-[1.2]"}>Book Appointment</Button>
+                <Button className={"bg-red-600 hover:bg-red-700 rounded-3xl cursor-pointer scale-[1.2]"}>Contact me</Button>
             </div>
         </div>
     );
