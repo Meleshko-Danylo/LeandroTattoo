@@ -11,8 +11,8 @@ import tattoo_8_img from "../assets/tattoo_8.png";
 
 const ProjectsBoard = () => {
     return (
-        <div id={"projects-board"} className={"w-[55vw] scroll-mt-20 flex flex-col gap-16 items-center"}>
-            <span className={"appear text-po text-6xl"}>Meet the artist!</span>
+        <div id={"projects-board"} className={"w-[55vw] scroll-mt-20 flex flex-col gap-16 items-center pt-20"}>
+            <span className={"appear text-po text-6xl font-FingerPrint"}>Meet the artist!</span>
             <div className={"flex flex-col gap-24 justify-start items-start pt-12 box-border w-full"}>
                 <div className={"appear flex items-start justify-between w-full"}>
                     <ProjectCard img={tattoo_1_img} date={"20/10/2022"} feedback={"Great job! I'm in love with the result"}/>

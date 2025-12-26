@@ -7,14 +7,15 @@ import tattoo_4_img from "../assets/tattoo_4.png";
 import tattoo_5_img from "../assets/tattoo_5.png";
 import tattoo_6_img from "../assets/tattoo_6.png";
 import tattoo_7_img from "../assets/tattoo_7.png";
+import {scrollToContacts} from "@/Components/Header.tsx";
 
 
 const Home = () => {
     
     return (
         <div id={"home"} className={"flex flex-col justify-center items-center mt-20 scroll-mt-20 appear"}>
-            <div id={"title"} className={"pt-16 max-w-[35vw] text-center flex flex-col gap-12"}>
-                <span className={"text-po text-6xl"}>
+            <div id={"title"} className={"pt-16 max-w-[55vw] text-center flex flex-col gap-12"}>
+                <span className={"text-po text-7xl font-FingerPrint pb-5 pt-5"}>
                     I'll help you find the right project for you
                 </span>
             </div>
@@ -34,7 +35,8 @@ const Home = () => {
                      style={{transform: "perspective(1000px) rotateY(-25deg)"}}/>
             </div>
             <div>
-                <Button className={"bg-red-600 hover:bg-red-700 rounded-3xl cursor-pointer scale-[1.2]"}>Contact me</Button>
+                <Button onClick={scrollToContacts} className={"bg-red-600 hover:bg-red-700 rounded-3xl " +
+                    "cursor-pointer scale-[1.2] font-Outfit"}>Contacts</Button>
             </div>
         </div>
     );

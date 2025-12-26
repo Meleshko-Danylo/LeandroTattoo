@@ -13,7 +13,7 @@ const ProjectCard = ({img, date, feedback, className}: {img: string, date: strin
     
     return (
         <div className={`relative w-[20vw] h-[50vh] flex flex-col justify-between items-start gap-2 rounded-3xl bg-[#dbd8e3] shadow-lg pt-8 
-        pb-8 pl-5 pr-5 inset-shadow-sm inset-shadow-indigo-500 ${className || ''}`}
+        pb-8 pl-5 pr-5 inset-shadow-sm inset-shadow-indigo-500 font-FingerPrint ${className || ''}`}
              style={{transform: `rotate(${getRandomRotation()})`}}
         >
             <div className={`absolute -top-12 -right-12 w-[40%] min-h-[30%] shadow-xl/30 bg-chart-4 p-2`}

@@ -7,6 +7,45 @@
   @apply object-cover rounded-2xl shadow-lg shadow-indigo-400/50
 }
 
+@font-face {
+  font-family: 'BBHBartle-R';
+  src: url(./assets/fonts/BBHBartle-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'FingerPrint-R';
+  src: url(./assets/fonts/FingerPaint-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Macondo-R';
+  src: url(./assets/fonts/Macondo-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Outfit-VariableFont';
+  src: url(./assets/fonts/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: 'Pompiere-R';
+  src: url(./assets/fonts/Pompiere-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Quintessential-R';
+  src: url(./assets/fonts/Quintessential-Regular.ttf);
+}
+
+@theme{
+  --font-BBHartle: 'BBHBartle-R', sans-serif;
+  --font-FingerPrint: 'FingerPrint-R', sans-serif;
+  --font-Macondo: 'Macondo-R', sans-serif;
+  --font-Outfit: 'Outfit-VariableFont', sans-serif;
+  --font-Pompiere: 'Pompiere-R', sans-serif;
+  --font-Quintessential: 'Quintessential-R', sans-serif;
+}
+
 .appear {
   opacity: 0;
   scale: 0.5;
@@ -19,8 +58,8 @@
 }
 
 #content > div{
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-top: 4vh;
+  margin-bottom: 4vh;
 }
 
 .contact-enter-line{
@@ -46,13 +85,19 @@
 .reference-box-pw{
   background: linear-gradient(to right, white, mediumpurple) padding-box, linear-gradient(to right, mediumpurple, white) border-box;
   border-color: transparent;
-  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-5 cursor-pointer border-2
+  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2
 }
 
 .reference-box-rw{
   background: linear-gradient(to right, white, darkred) padding-box, linear-gradient(to right, darkred, white) border-box;
   border-color: transparent;
-  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-5 cursor-pointer border-2
+  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2
+}
+
+.reference-box-gw{
+  background: linear-gradient(to right, white, #93e4c1) padding-box, linear-gradient(to right, #93e4c1, white) border-box;
+  border-color: transparent;
+  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2
 }
 
 .bg-lg-po{
@@ -61,6 +106,12 @@
 
 .text-po{
   background: linear-gradient(to right, mediumpurple, orange);
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gw{
+  background: linear-gradient(to right, gray, white);
   background-clip: text;
   color: transparent;
 }

@@ -1,7 +1,7 @@
 import Header from "@/Components/Header.tsx";
 import Home from "@/Components/Home.tsx";
 import AboutMe from "@/Components/AboutMe.tsx";
-import FrequentlyAskedQuestions from "@/Components/FrequentlyAskedQuestions.tsx";
+import FAQ from "@/Components/FAQ.tsx";
 import {useEffect} from "react";
 import ProjectsBoard from "@/Components/ProjectsBoard.tsx";
 import ContactMe from "@/Components/ContactMe.tsx";
@@ -37,7 +37,7 @@ function App() {
               <AboutMe/>
               <ProjectsBoard/>
               <ContactMe/>
-              <FrequentlyAskedQuestions/>
+              <FAQ/>
           </div>
       </div>
   )
