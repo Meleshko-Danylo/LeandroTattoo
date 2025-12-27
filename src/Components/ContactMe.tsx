@@ -1,35 +1,24 @@
-﻿import React, {useState} from 'react';
+﻿import React from 'react';
 import {FaSquareInstagram} from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { FaWhatsappSquare } from "react-icons/fa";
+import { toast } from 'react-toastify';
+import { HiMapPin } from "react-icons/hi2";
 
 const ContactMe = () => {
-    const [buttonHover, setButtonHover] = useState({
-        instagramLinkHovered: false,
-        emailLinkHovered: false,
-        phoneNumberHovered: false
-    });
+    const notify = (message:string) => toast(message);
+    const notifyCopied = (message:string) => notify(`${message} copied!`);
     
     return (
-        <div id={"contacts"} className={"appear w-3/5 scroll-mt-28 flex flex-col justify-start items-start gap-4 font-FingerPrint"}>
-            <span className={"text-3xl text-po"}>My Social Media</span>
+        <div id={"contacts"} className={"appear w-[90vw] 2xl:w-3/5 scroll-mt-52 2xl:scroll-mt-28 flex flex-col justify-start items-start gap-4 font-FingerPrint"}>
+            <span className={"text-3xl 2xl:text-5xl text-po"}>My Social Media</span>
             <div className={"relative w-full flex flex-col justify-center items-center gap-2"}>
                 <div className={"contact-enter-line"}></div>
-                <div className={"flex justify-around flex-wrap w-full gap-15 pt-2"}>
-                    <div className={"flex flex-wrap items-start justify-around"}>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/leandrotattooextreme/"
-                           onMouseLeave={() => setButtonHover((prevState) => (
-                               {...prevState, instagramLinkHovered: false}
-                           ))}
-                           onMouseEnter={() => setButtonHover((prevState) => (
-                               {...prevState, instagramLinkHovered: true}
-                           ))}
-                        >
-                            <div className={"flex reference-box-pw shadow-lg shadow-purple-600/70 hover:inset-shadow-sm inset-shadow-indigo-500"}>
-                                <div>
-                                    <FaSquareInstagram className={"w-14 h-14 fill-current"}
-                                                       color={`${buttonHover.instagramLinkHovered ? "mediumpurple" : "black"}`}/>
-                                </div>
+                <div className={"flex flex-col 2xl:flex-row justify-around 2xl:flex-wrap w-full gap-y-6 2xl:gap-x-16 pt-2"}>
+                    <div className={"fa-instagram-container flex 2xl:flex-wrap items-start 2xl:justify-around"}>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/leandrotattooextreme/">
+                            <div className={"flex reference-box-pw"}>
+                                <FaSquareInstagram className={"fa-instagram w-14 h-14 fill-current"}/>
                                 <div className={"flex flex-col"}>
                                     <span className={"text-black font-bold text-start"}>
                                         My Instagram:
@@ -41,21 +30,14 @@ const ContactMe = () => {
                             </div>
                         </a>
                     </div>
-                    <div className={"flex flex-wrap items-start justify-around"}>
-                        <div onMouseLeave={() => setButtonHover((prevState) => (
-                               {...prevState, emailLinkHovered: false}
-                           ))}
-                           onMouseEnter={() => setButtonHover((prevState) => (
-                               {...prevState, emailLinkHovered: true}
-                           ))}
-                           onClick={() => navigator.clipboard.writeText("leandropoliti26june@gmail.com")}
-                        >
-                            <div className={"flex reference-box-rw shadow-lg shadow-red-800/70 hover:inset-shadow-sm inset-shadow-red-500"}
+                    <div className={"fa-email-container flex flex-wrap items-start 2xl:justify-around"}>
+                        <div onClick={() => {
+                            navigator.clipboard.writeText("leandropoliti26june@gmail.com");
+                            notifyCopied("leandropoliti26june@gmail.com");
+                        }}>
+                            <div className={"flex reference-box-rw"}
                             >
-                                <div>
-                                    <MdEmail className={"w-14 h-14 fill-current"}
-                                             color={`${buttonHover.emailLinkHovered ? "darkred" : "black"}`}/>
-                                </div>
+                                <MdEmail className={"fa-email w-14 h-14 fill-current"}/>
                                 <div className={"flex flex-col"}>
                                     <span className={"text-black font-bold text-start"}>
                                         Email me at:
@@ -67,27 +49,33 @@ const ContactMe = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={"flex flex-wrap items-start justify-around"}>
-                        <div onMouseLeave={() => setButtonHover((prevState) => (
-                               {...prevState, phoneNumberHovered: false}
-                           ))}
-                           onMouseEnter={() => setButtonHover((prevState) => (
-                               {...prevState, phoneNumberHovered: true}
-                           ))}
-                           onClick={() => navigator.clipboard.writeText("+393773873337")}
-                        >
-                            <div className={"flex reference-box-gw shadow-lg shadow-green-300/70 hover:inset-shadow-sm inset-shadow-green-500"}
+                    <div className={"fa-whatsUp-container flex flex-wrap items-start 2xl:justify-around"}>
+                        <div onClick={() => {
+                            navigator.clipboard.writeText("+393773873337");
+                            notifyCopied("+393773873337");
+                        }}>
+                            <div className={"flex reference-box-gw"}
                             >
-                                <div>
-                                    <FaWhatsappSquare className={"w-14 h-14 fill-current"}
-                                             color={`${buttonHover.phoneNumberHovered ? "#93e4c1" : "black"}`}/>
-                                </div>
+                                <FaWhatsappSquare className={"fa-whatsUp w-14 h-14 fill-current"}/>
                                 <div className={"flex flex-col"}>
                                     <span className={"text-black font-bold text-start"}>
                                         Contact me on WhatsApp:
                                     </span>
                                     <span className={"text-gray-700 font-bold text-start"}>
                                         +393773873337
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={"fa-place-container flex flex-wrap items-start 2xl:justify-around"}>
+                        <div>
+                            <div className={"flex reference-box-gw-2"}
+                            >
+                                <HiMapPin className={"fa-place w-14 h-14 fill-current"}/>
+                                <div className={"flex flex-col"}>
+                                    <span className={"text-black font-bold text-start"}>
+                                        Working in Caltagirone (CT) 95041
                                     </span>
                                 </div>
                             </div>

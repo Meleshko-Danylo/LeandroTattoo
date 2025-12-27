@@ -8,8 +8,8 @@ import {
 
 const FAQ = () => {
     return (
-        <div id={"faq"} className={"w-3/5 scroll-mt-20 flex flex-col gap-4 items-start justify-start appear"}>
-            <span className={"text-po text-3xl font-FingerPrint"}>Frequently Asked Questions</span>
+        <div id={"faq"} className={"w-[90vw] 2xl:w-3/5 scroll-mt-20 flex flex-col gap-4 items-start justify-start appear"}>
+            <span className={"text-po text-3xl 2xl:text-5xl font-FingerPrint"}>Frequently Asked Questions</span>
             <div className={"w-full flex justify-start items-start gap-4 mb-10"}>
                 <Accordion
                     type="single"

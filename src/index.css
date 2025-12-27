@@ -4,7 +4,39 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .img{
-  @apply object-cover rounded-2xl shadow-lg shadow-indigo-400/50
+  @apply object-cover rounded-4xl shadow-lg shadow-indigo-400/50
+}
+
+.fa-instagram{
+  @apply text-black;
+}
+
+.fa-email-container:hover .fa-email{
+  color: darkred;
+}
+
+.fa-email{
+  @apply text-black;
+}
+
+.fa-whatsUp-container:hover .fa-whatsUp{
+  color: #93e4c1;
+}
+
+.fa-whatsUp{
+  @apply text-black;
+}
+
+.fa-instagram-container:hover .fa-instagram{
+  color: mediumpurple;
+}
+
+.fa-place{
+  @apply text-black;
+}
+
+.fa-place-container:hover .fa-place{
+  color: #1f6f78;
 }
 
 @font-face {
@@ -46,6 +78,20 @@
   --font-Quintessential: 'Quintessential-R', sans-serif;
 }
 
+*{
+  scrollbar-width: none !important;
+}
+
+body{
+  @apply bg-gray-950
+}
+
+@media screen and (width <= 768px){
+  .img-size-2{
+    @apply min-w-[38vw] h-[35vh]
+  }
+}
+
 .appear {
   opacity: 0;
   scale: 0.5;
@@ -85,19 +131,29 @@
 .reference-box-pw{
   background: linear-gradient(to right, white, mediumpurple) padding-box, linear-gradient(to right, mediumpurple, white) border-box;
   border-color: transparent;
-  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2
+  @apply items-center w-[90vw] 2xl:w-[24vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2 
+  shadow-lg shadow-purple-600/70 hover:inset-shadow-sm inset-shadow-indigo-500
 }
 
 .reference-box-rw{
   background: linear-gradient(to right, white, darkred) padding-box, linear-gradient(to right, darkred, white) border-box;
   border-color: transparent;
-  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2
+  @apply items-center w-[90vw] overflow-hidden 2xl:w-[24vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2
+  shadow-lg shadow-red-800/70 hover:inset-shadow-sm inset-shadow-red-500
 }
 
 .reference-box-gw{
   background: linear-gradient(to right, white, #93e4c1) padding-box, linear-gradient(to right, #93e4c1, white) border-box;
   border-color: transparent;
-  @apply items-center w-[20vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2
+  @apply items-center w-[90vw] 2xl:w-[24vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2
+  shadow-lg shadow-green-300/70 hover:inset-shadow-sm inset-shadow-green-500
+}
+
+.reference-box-gw-2{
+  background: linear-gradient(to right, white, #1f6f78) padding-box, linear-gradient(to right, #1f6f78, white) border-box;
+  border-color: transparent;
+  @apply items-center w-[90vw] 2xl:w-[24vw] box-border p-5 rounded-3xl gap-3 cursor-pointer border-2
+  shadow-lg shadow-green-950/70 hover:inset-shadow-sm inset-shadow-green-500
 }
 
 .bg-lg-po{
