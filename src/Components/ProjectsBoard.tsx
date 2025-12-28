@@ -15,48 +15,51 @@ import tattoo_12_img from "../assets/tattoo_12.png";
 import tattoo_13_img from "../assets/tattoo_13.png";
 import tattoo_14_img from "../assets/tattoo_14.png";
 import tattoo_15_img from "../assets/tattoo_15.png";
+import {useLanguageContext} from "@/App.tsx";
 
 const ProjectsBoard = () => {
+    const {t} = useLanguageContext();
+    
     return (
-        <div id={"projects-board"} className={"pb-6 2xl:pb-0 2xl:overflow-visible w-screen lg:w-[85vw] 2xl:w-[55vw] " +
-            "scroll-mt-20 lg:scroll-mt-2 2xl:scroll-mt-20 flex flex-col gap-6 2xl:gap-16 " +
+        <div id={"projects-board"} className={"pb-6 2xl:pb-0 2xl:overflow-visible w-screen xl:w-[85vw] 2xl:w-[55vw] " +
+            "scroll-mt-20 xl:scroll-mt-2 2xl:scroll-mt-20 flex flex-col gap-6 lg:gap-20 xl:gap-6 2xl:gap-16 " +
             "items-center pl-6 pr-6 pt-20"}>
-            <span className={"appear text-po text-center text-6xl font-FingerPrint"}>My works</span>
-            <div className={"flex flex-col gap-24 lg:gap-20 2xl:gap-24 justify-start items-start pt-12 box-border w-full"}>
-                <div className={"flex gap-24 lg:gap-0 flex-col lg:flex-row items-center lg:items-start lg:justify-around 2xl:justify-between w-full"}>
-                    <ProjectCard img={tattoo_1_img} date={"27/6/2024"} feedback={"Even better than I imagined!"}/>
-                    <ProjectCard img={tattoo_2_img} date={"8/8/2021"} feedback={"Lovely done! Thank you!"}/>
+            <h2 className={"appear text-po text-center text-6xl lg:text-9xl xl:text-6xl 2xl:text-7xl font-FingerPrint"}>{t('projects.title')}</h2>
+            <div className={"flex flex-col gap-24 lg:gap-36 xl:gap-20 2xl:gap-24 justify-start items-start pt-12 box-border w-full"}>
+                <div className={"flex gap-24 xl:gap-0 flex-col xl:flex-row items-center xl:items-start xl:justify-around 2xl:justify-between w-full"}>
+                    <ProjectCard img={tattoo_1_img} date={"27/6/2024"} feedback={t('projects.feedback.f1')}/>
+                    <ProjectCard img={tattoo_2_img} date={"8/8/2021"} feedback={t('projects.feedback.f2')}/>
                 </div>
                 <div className={"flex items-start justify-center w-full"}>
-                    <ProjectCard img={tattoo_3_img} date={"19/6/2025"} feedback={"Thank you very much!"}/>
+                    <ProjectCard img={tattoo_3_img} date={"19/6/2025"} feedback={t('projects.feedback.f3')}/>
                 </div>
-                <div className={"flex gap-24 lg:gap-0 flex-col lg:flex-row items-center lg:items-start lg:justify-around 2xl:justify-between w-full"}>
-                    <ProjectCard img={tattoo_4_img} date={"12/4/2025"} feedback={"Amazing work! Thank you!"}/>
-                    <ProjectCard img={tattoo_5_img} date={"23/10/2023"} feedback={"Awesome!"}/>
-                </div>
-                <div className={"flex items-start justify-center w-full"}>
-                    <ProjectCard img={tattoo_6_img} date={"14/9/2023"} feedback={"Great job! I'm in love with the result"}/>
-                </div>
-                <div className={"flex gap-24 lg:gap-0 flex-col lg:flex-row items-center lg:items-start lg:justify-around 2xl:justify-between w-full"}>
-                    <ProjectCard img={tattoo_7_img} date={"21/6/2023"} feedback={"Awesome work! Thank you!"}/>
-                    <ProjectCard img={tattoo_8_img} date={"17/8/2023"} feedback={"Stunning design! Thank you!"}/>
+                <div className={"flex gap-24 xl:gap-0 flex-col xl:flex-row items-center xl:items-start xl:justify-around 2xl:justify-between w-full"}>
+                    <ProjectCard img={tattoo_4_img} date={"12/4/2025"} feedback={t('projects.feedback.f4')}/>
+                    <ProjectCard img={tattoo_5_img} date={"23/10/2023"} feedback={t('projects.feedback.f5')}/>
                 </div>
                 <div className={"flex items-start justify-center w-full"}>
-                    <ProjectCard img={tattoo_9_img} date={"29/4/2025"} feedback={"So lovely! Thank you!"}/>
+                    <ProjectCard img={tattoo_6_img} date={"14/9/2023"} feedback={t('projects.feedback.f6')}/>
                 </div>
-                <div className={"flex gap-24 lg:gap-0 flex-col lg:flex-row items-center lg:items-start lg:justify-around 2xl:justify-between w-full"}>
-                    <ProjectCard img={tattoo_10_img} date={"26/10/2025"} feedback={"I'm in love with this!"}/>
-                    <ProjectCard img={tattoo_11_img} date={"21/8/2024"} feedback={"Thank you so much!"}/>
-                </div>
-                <div className={"flex items-start justify-center w-full"}>
-                    <ProjectCard img={tattoo_12_img} date={"17/9/2023"} feedback={"Perfectly done!"}/>
-                </div>
-                <div className={"flex gap-24 lg:gap-0 flex-col lg:flex-row items-center lg:items-start lg:justify-around 2xl:justify-between w-full"}>
-                    <ProjectCard img={tattoo_13_img} date={"19/6/2023"} feedback={"Thank you for your work!"}/>
-                    <ProjectCard img={tattoo_14_img} date={"2/4/2023"} feedback={"Great job"}/>
+                <div className={"flex gap-24 xl:gap-0 flex-col xl:flex-row items-center xl:items-start xl:justify-around 2xl:justify-between w-full"}>
+                    <ProjectCard img={tattoo_7_img} date={"21/6/2023"} feedback={t('projects.feedback.f7')}/>
+                    <ProjectCard img={tattoo_8_img} date={"17/8/2023"} feedback={t('projects.feedback.f8')}/>
                 </div>
                 <div className={"flex items-start justify-center w-full"}>
-                    <ProjectCard img={tattoo_15_img} date={"5/2/2023"} feedback={"Just like I imagined it!"}/>
+                    <ProjectCard img={tattoo_9_img} date={"29/4/2025"} feedback={t('projects.feedback.f9')}/>
+                </div>
+                <div className={"flex gap-24 xl:gap-0 flex-col xl:flex-row items-center xl:items-start xl:justify-around 2xl:justify-between w-full"}>
+                    <ProjectCard img={tattoo_10_img} date={"26/10/2025"} feedback={t('projects.feedback.f10')}/>
+                    <ProjectCard img={tattoo_11_img} date={"21/8/2024"} feedback={t('projects.feedback.f11')}/>
+                </div>
+                <div className={"flex items-start justify-center w-full"}>
+                    <ProjectCard img={tattoo_12_img} date={"17/9/2023"} feedback={t('projects.feedback.f12')}/>
+                </div>
+                <div className={"flex gap-24 xl:gap-0 flex-col xl:flex-row items-center xl:items-start xl:justify-around 2xl:justify-between w-full"}>
+                    <ProjectCard img={tattoo_13_img} date={"19/6/2023"} feedback={t('projects.feedback.f13')}/>
+                    <ProjectCard img={tattoo_14_img} date={"2/4/2023"} feedback={t('projects.feedback.f14')}/>
+                </div>
+                <div className={"flex items-start justify-center w-full"}>
+                    <ProjectCard img={tattoo_15_img} date={"5/2/2023"} feedback={t('projects.feedback.f15')}/>
                 </div>
             </div>
         </div>

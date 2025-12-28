@@ -6,22 +6,34 @@ import React, {useEffect, useState} from "react";
 import ProjectsBoard from "@/Components/ProjectsBoard.tsx";
 import ContactMe from "@/Components/ContactMe.tsx";
 import {ToastContainer} from "react-toastify";
+import {type DotPath, translations, type TranslationSchema} from "@/translations.ts";
 
 type LanguageContextType = {
     ln: string;
     setLn: React.Dispatch<React.SetStateAction<string>>;
+    t: (path: DotPath<TranslationSchema>) => string;
 };
 
 const LanguageContext = React.createContext<LanguageContextType|undefined>(undefined);
 
-export const useLanguageContext = (): any => {
+export const useLanguageContext = (): LanguageContextType => {
     const context = React.useContext(LanguageContext);
     if (context === undefined) throw new Error('useLanguage must be used within a LanguageProvider');
     return context;
 }
 
 function App() {
-    const [ln, setLn] = useState<string>("en");
+    const [ln, setLn] = useState<string>(localStorage.getItem("lang") || 'en');
+
+    const t = (path: DotPath<TranslationSchema>): string => {
+        const keys = path.split('.');
+        let result:any = translations[ln];
+        for (const key of keys) {
+            result = result?.[key];
+            if(!result) return path;
+        }
+        return result;
+    };
     
     useEffect(() => {
         const elements = Array.from(document.querySelectorAll(".appear"));
@@ -47,7 +59,7 @@ function App() {
     
   return (
       <div className={"h-full min-h-screen w-full overflow-hidden bg-gray-950"}>
-          <LanguageContext.Provider value={{ ln, setLn }}>
+          <LanguageContext.Provider value={{ ln, setLn, t }}>
               <Header/>
               <div id={"content"} className={"flex flex-col justify-start items-center h-full min-h-screen w-full bg-transparent gap-[8vh]"}>
                   <Home/>
@@ -56,7 +68,7 @@ function App() {
                   <ContactMe/>
                   <FAQ/>
               </div>
-              <ToastContainer autoClose={2000} newestOnTop={true} theme={"light"} limit={4} pauseOnHover={false}/>
+              <ToastContainer autoClose={2000} newestOnTop={true} theme={"dark"} limit={4} pauseOnHover={false}/>
           </LanguageContext.Provider>
       </div>
   )
