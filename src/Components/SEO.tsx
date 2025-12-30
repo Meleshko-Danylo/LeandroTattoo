@@ -9,13 +9,6 @@ const SEO = () => {
         ? "Tatuatore professionista a Caltagirone e Catania. Specializzato in design personalizzati e tatuaggi artistici. Ti aiuterò a trovare il progetto giusto per te."
         : "Professional tattoo artist in Caltagirone and Catania. Specialist in custom designs and artistic tattoos. I'll help you find the right project for you.";
     
-    const keywords = ln === 'it'
-        ? "tatuaggio, tatuatore, artistico, personalizzato, Leandro, disegni tatuaggi, body art, arte dell'inchiostro, tatuaggi, galleria tatuaggi, " +
-        "tatuatore catania, tatuatore caltagirone, tatuaggi per uomo e donna, ispirazione tatuaggi, disegni tatuaggi"
-        
-        : "tattoo, tattoo artist, custom, Leandro, tattoo design, body art, ink art, tattooing, tattoo gallery, " +
-        "tattoo artist catania, tattoo artist caltagirone, tattoos for men and women, tattoo inspiration, tattoo design";
-    
     const structuredData = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -52,7 +45,6 @@ const SEO = () => {
 
             <meta property="og:title" content={title} />
             <meta property="og:description" content={description} />
-            <meta name="keywords" content={keywords}/>
 
             <meta name="twitter:title" content={title} />
             <meta name="twitter:description" content={description} />
