@@ -24,7 +24,7 @@ const ProjectCard = ({img, date, feedback, className}: {img: string, date: strin
                     {feedback}
                 </span>
             </div>
-            <img className={"img w-full h-[90%]"} src={img} alt="one of my projects (tattoo)"/>
+            <img className={"img w-full h-[90%]"} src={img} alt="Tattoo project by Leandro - custom design work"/>
             <span className={"text-sidebar-foreground ml-2 mt-2 text-2xl md:text-3xl lg:text-5xl xl:text-2xl font-bold"}>{date}</span>
         </div>
     );

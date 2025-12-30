@@ -20,7 +20,7 @@ const ContactMe = () => {
                     <div className={"fa-instagram-container flex 2xl:flex-wrap items-start 2xl:justify-around"}>
                         <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/leandrotattooextreme/">
                             <div className={"flex reference-box-pw md:text-[20px] lg:text-2xl xl:text-[18px]"}>
-                                <FaSquareInstagram className={"fa-instagram w-14 h-14 fill-current"}/>
+                                <FaSquareInstagram className={"fa-instagram w-11 h-11 md:w-14 md:h-14 fill-current"}/>
                                 <div className={"flex flex-col"}>
                                     <span className={"text-black font-bold text-start"}>
                                         {t('contacts.instagram')}
@@ -39,7 +39,7 @@ const ContactMe = () => {
                         }}>
                             <div className={"flex reference-box-rw md:text-[20px] lg:text-2xl xl:text-[18px]"}
                             >
-                                <MdEmail className={"fa-email w-14 h-14 fill-current"}/>
+                                <MdEmail className={"fa-email min-w-11 h-11 md:w-14 md:h-14 fill-current"}/>
                                 <div className={"flex flex-col"}>
                                     <span className={"text-black font-bold text-start"}>
                                         {t('contacts.email')}
@@ -58,7 +58,7 @@ const ContactMe = () => {
                         }}>
                             <div className={"flex reference-box-gw md:text-[20px] lg:text-2xl xl:text-[18px]"}
                             >
-                                <FaWhatsappSquare className={"fa-whatsUp w-14 h-14 fill-current"}/>
+                                <FaWhatsappSquare className={"fa-whatsUp w-11 h-11 md:w-14 md:h-14 fill-current"}/>
                                 <div className={"flex flex-col"}>
                                     <span className={"text-black font-bold text-start"}>
                                         {t('contacts.whatsapp')}
@@ -74,7 +74,7 @@ const ContactMe = () => {
                         <div>
                             <div className={"flex reference-box-gw-2 md:text-[20px] lg:text-2xl xl:text-[18px]"}
                             >
-                                <HiMapPin className={"fa-place w-14 h-14 fill-current"}/>
+                                <HiMapPin className={"fa-place w-11 h-11 md:w-14 md:h-14 fill-current"}/>
                                 <div className={"flex flex-col"}>
                                     <span className={"text-black font-bold text-start"}>
                                         {t('contacts.location')}

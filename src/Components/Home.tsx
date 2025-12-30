@@ -23,24 +23,24 @@ const Home = () => {
                 </h1>
             </div>
             <div id={"set-of-images"} className={"flex w-full justify-center items-center gap-5 xl:gap-3 2xl:gap-5 overflow-hidden pb-4 xl:pb-2 2xl:pb-4"}>
-                {window.innerWidth >= 1280 && (<img src={tattoo_1_img} alt="image of a tattoo" className={"min-w-[20vw] h-[50vh] xl:min-w-[18vw] xl:h-[54vh] " +
+                {window.innerWidth >= 1280 && (<img src={tattoo_1_img} alt="Custom artistic tattoo design" className={"min-w-[20vw] h-[50vh] xl:min-w-[18vw] xl:h-[54vh] " +
                     "2xl:min-w-[18vw] 2xl:h-[58vh] img"}
                                                     style={{transform: "perspective(1000px) rotateY(25deg)"}}/>)}
-                <img src={tattoo_2_img} alt="image of a tattoo" className={"min-w-[20vw] h-[42vh] md:min-w-[24vw] md:h-[53vh] lg:min-w-[24vw] lg:h-[54vh] xl:min-w-[16vw] xl:h-[46vh] " +
+                <img src={tattoo_2_img} alt="Professional tattoo work in Caltagirone" className={"min-w-[20vw] h-[42vh] md:min-w-[24vw] md:h-[53vh] lg:min-w-[24vw] lg:h-[54vh] xl:min-w-[16vw] xl:h-[46vh] " +
                     "2xl:min-w-[16vw] 2xl:h-[50vh] img"}
                      style={{transform: "perspective(1000px) rotateY(20deg)"}}/>
-                <img src={tattoo_3_img} alt="image of a tattoo" className={"min-w-[18vw] h-[36vh] md:min-w-[20vw] md:h-[45vh] lg:min-w-[20vw] lg:h-[46vh] xl:min-w-[13vw] xl:h-[40vh] " +
+                <img src={tattoo_3_img} alt="Artistic body art by Leandro" className={"min-w-[18vw] h-[36vh] md:min-w-[20vw] md:h-[45vh] lg:min-w-[20vw] lg:h-[46vh] xl:min-w-[13vw] xl:h-[40vh] " +
                     "2xl:min-w-[13vw] 2xl:h-[44vh] img"}
                      style={{transform: "perspective(1000px) rotateY(15deg)"}}/>
-                <img src={tattoo_4_img} alt="image of a tattoo" className={"min-w-[16vw] h-[34vh] md:min-w-[18vw] md:h-[40vh] lg:min-w-[18vw] lg:h-[40vh] xl:min-w-[12vw] xl:h-[38vh] " +
+                <img src={tattoo_4_img} alt="Detailed tattoo project" className={"min-w-[16vw] h-[34vh] md:min-w-[18vw] md:h-[40vh] lg:min-w-[18vw] lg:h-[40vh] xl:min-w-[12vw] xl:h-[38vh] " +
                     "2xl:min-w-[12vw] 2xl:h-[42vh] img"}/>
-                <img src={tattoo_5_img} alt="tattoo" className={"min-w-[18vw] h-[36vh] md:min-w-[20vw] md:h-[45vh] lg:min-w-[20vw] lg:h-[46vh] xl:min-w-[13vw] xl:h-[40vh] " +
+                <img src={tattoo_5_img} alt="Custom tattoo artist work" className={"min-w-[18vw] h-[36vh] md:min-w-[20vw] md:h-[45vh] lg:min-w-[20vw] lg:h-[46vh] xl:min-w-[13vw] xl:h-[40vh] " +
                     "2xl:min-w-[13vw] 2xl:h-[44vh] img"} 
                      style={{transform: "perspective(1000px) rotateY(-15deg)"}}/>
-                <img src={tattoo_6_img} alt="image of a tattoo" className={"min-w-[20vw] h-[42vh] md:min-w-[24vw] md:h-[53vh] lg:min-w-[24vw] lg:h-[54vh] xl:min-w-[16vw] xl:h-[46vh] " +
+                <img src={tattoo_6_img} alt="Professional tattooing in Catania" className={"min-w-[20vw] h-[42vh] md:min-w-[24vw] md:h-[53vh] lg:min-w-[24vw] lg:h-[54vh] xl:min-w-[16vw] xl:h-[46vh] " +
                     "2xl:min-w-[16vw] 2xl:h-[50vh] img"}
                      style={{transform: "perspective(1000px) rotateY(-20deg)"}}/>
-                {window.innerWidth >= 1280 && (<img src={tattoo_7_img} alt="image of a tattoo" className={"min-w-[20vw] h-[50vh] xl:min-w-[18vw] xl:h-[54vh] 2xl:min-w-[18vw] 2xl:h-[58vh] " +
+                {window.innerWidth >= 1280 && (<img src={tattoo_7_img} alt="Artistic tattoo gallery piece" className={"min-w-[20vw] h-[50vh] xl:min-w-[18vw] xl:h-[54vh] 2xl:min-w-[18vw] 2xl:h-[58vh] " +
                     "img"}
                                                     style={{transform: "perspective(1000px) rotateY(-25deg)"}}/>)}
             </div>

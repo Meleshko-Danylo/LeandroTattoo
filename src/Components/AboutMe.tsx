@@ -12,7 +12,7 @@ const AboutMe = () => {
                 <h2 className={"text-po min-w-screen text-center 2xl:min-w-1/5 text-6xl md:text-7xl lg:text-9xl xl:text-6xl 2xl:text-7xl font-FingerPrint"}>{t('about.title')}</h2>
                 <div className={"flex flex-col xl:flex-row justify-start 2xl:justify-center items-center lg:gap-16 xl:gap-16 gap-12 2xl:gap-32 w-full"}>
                     <div className={"relative xl:self-start"}>
-                        <img src={leandro_img} alt="image of the Artist" className={"xl:min-w-[25vw] xl:max-w-[60vw] xl:min-h-[80vh] 2xl:min-w-[20vw] " +
+                        <img src={leandro_img} alt="Leandro, professional tattoo artist and painter" className={"xl:min-w-[25vw] xl:max-w-[60vw] xl:min-h-[80vh] 2xl:min-w-[20vw] " +
                             "2xl:max-w-[60vw] 2xl:min-h-[60vh] min-w-[70vw] max-w-[80vw] h-[55vh] md:min-w-[60vw] lg:min-w-[54vw] lg:max-w-[60vw] lg:h-[55vh] img"}
                              style={{transform: "perspective(1000px) rotateY(5deg)"}}/>
                         <span className={"absolute text-amber-50 text-6xl md:text-7xl lg:text-8xl xl:text-6xl 2xl:text-7xl bottom-2 right-2 text-po font-FingerPrint"}><b>{t('about.name')}</b></span>

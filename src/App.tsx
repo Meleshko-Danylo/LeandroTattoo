@@ -7,6 +7,7 @@ import ProjectsBoard from "@/Components/ProjectsBoard.tsx";
 import ContactMe from "@/Components/ContactMe.tsx";
 import {ToastContainer} from "react-toastify";
 import {type DotPath, translations, type TranslationSchema} from "@/translations.ts";
+import SEO from "@/Components/SEO.tsx";
 
 type LanguageContextType = {
     ln: string;
@@ -23,7 +24,7 @@ export const useLanguageContext = (): LanguageContextType => {
 }
 
 function App() {
-    const [ln, setLn] = useState<string>(localStorage.getItem("lang") || 'en');
+    const [ln, setLn] = useState<string>(localStorage.getItem("lang") || 'it');
 
     const t = (path: DotPath<TranslationSchema>): string => {
         const keys = path.split('.');
@@ -60,6 +61,7 @@ function App() {
   return (
       <div className={"h-full min-h-screen w-full overflow-hidden bg-gray-950"}>
           <LanguageContext.Provider value={{ ln, setLn, t }}>
+              <SEO/>
               <Header/>
               <div id={"content"} className={"flex flex-col justify-start items-center h-full min-h-screen w-full bg-transparent gap-[8vh]"}>
                   <Home/>
