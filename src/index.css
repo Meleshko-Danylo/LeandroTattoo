@@ -172,6 +172,12 @@ body{
   color: transparent;
 }
 
+@media (width < 400px) {
+  #artist {
+    @apply scroll-mt-176
+  }
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
