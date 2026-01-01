@@ -13,7 +13,7 @@ const ContactMe = () => {
     
     return (
         <div id={"contacts"} className={"appear w-[90vw] 2xl:w-3/5 scroll-mt-20 xl:scroll-mt-36 2xl:-scroll-mt-20 flex flex-col justify-start items-start gap-4 font-FingerPrint"}>
-            <h3 className={"text-3xl md:text-5xl lg:text-6xl xl:text-3xl 2xl:text-5xl text-po"}>{t('contacts.title')}</h3>
+            <h3 className={"text-5xl md:text-[90px] lg:text-8xl xl:text-7xl 2xl:text-[88px] text-po font-BlackKnight"}>{t('contacts.title')}</h3>
             <div className={"relative w-full flex flex-col justify-center items-center gap-2"}>
                 <div className={"contact-enter-line"}></div>
                 <div className={"flex flex-col 2xl:flex-row justify-around 2xl:flex-wrap w-full gap-y-6 2xl:gap-x-16 pt-2"}>

@@ -12,7 +12,7 @@ const FAQ = () => {
     
     return (
         <div id={"faq"} className={"w-[90vw] 2xl:w-3/5 scroll-mt-20 flex flex-col gap-4 items-start justify-start appear"}>
-            <h3 className={"text-po text-3xl md:text-5xl lg:text-6xl xl:text-3xl leading-12 xl:leading-14 2xl:leading-20 2xl:text-5xl font-FingerPrint"}>{t('faq.title')}</h3>
+            <h3 className={"text-po text-5xl md:text-[90px] lg:text-8xl xl:text-7xl 2xl:text-[88px] leading-12 md:leading-20 xl:leading-14 2xl:leading-20 font-BlackKnight"}>{t('faq.title')}</h3>
             <div className={"w-full flex justify-start items-start gap-4 mb-10"}>
                 <Accordion
                     type="single"

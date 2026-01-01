@@ -2,7 +2,7 @@ import { useLanguageContext } from '@/App';
 import {useEffect} from "react";
 
 const SEO = () => {
-    const { ln, t } = useLanguageContext();
+    const { ln } = useLanguageContext();
     
     const title = "Leandro Tattoo | Professional Tattoo Artist";
     const description = ln === 'it' 

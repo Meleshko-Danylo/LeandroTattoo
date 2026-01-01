@@ -4,7 +4,7 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 .img{
-  @apply object-cover rounded-4xl shadow-lg shadow-indigo-400/50
+  @apply object-cover rounded-4xl shadow-lg shadow-red-900/50
 }
 
 .fa-instagram{
@@ -69,6 +69,11 @@
   src: url(./assets/fonts/Quintessential-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Black-Knight';
+  src: url(./assets/fonts/Black-Knight.ttf);
+}
+
 @theme{
   --font-BBHartle: 'BBHBartle-R', sans-serif;
   --font-FingerPrint: 'FingerPrint-R', sans-serif;
@@ -76,6 +81,7 @@
   --font-Outfit: 'Outfit-VariableFont', sans-serif;
   --font-Pompiere: 'Pompiere-R', sans-serif;
   --font-Quintessential: 'Quintessential-R', sans-serif;
+  --font-BlackKnight: 'Black-Knight', sans-serif;
 }
 
 *{
@@ -156,12 +162,22 @@ body{
   shadow-lg shadow-green-950/70 hover:inset-shadow-sm inset-shadow-green-500
 }
 
+/*.bg-lg-po{*/
+/*  background: linear-gradient(to right, mediumpurple, orange);*/
+/*}*/
+
 .bg-lg-po{
-  background: linear-gradient(to right, mediumpurple, orange);
+  background: linear-gradient(to right, darkred, dimgray);
 }
 
+/*.text-po{*/
+/*  background: linear-gradient(to right, mediumpurple, orange);*/
+/*  background-clip: text;*/
+/*  color: transparent;*/
+/*}*/
+
 .text-po{
-  background: linear-gradient(to right, mediumpurple, orange);
+  background: linear-gradient(to right, darkred, whitesmoke);
   background-clip: text;
   color: transparent;
 }
