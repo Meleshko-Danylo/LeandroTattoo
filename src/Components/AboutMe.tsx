@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import leandro_img from "../assets/leandro_img.png";
+import leandro_img from "../assets/leandro_img.jpg";
 import { FaStarOfLife } from "react-icons/fa6";
 import {useLanguageContext} from "@/App.tsx";
 
