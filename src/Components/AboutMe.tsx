@@ -19,9 +19,9 @@ const AboutMe = () => {
                             <span style={{transform: "skewX(-10deg)"}} className={"text-8xl md:text-[140px] lg:text-[180px] xl:text-8xl 2xl:text-[132px] " +
                                 "text-po font-BlackKnight tracking-wide"}><b>{t('about.name')}</b></span>
                         </div>
-                        <div className={"absolute text-base/5 md:leading-8 lg:leading-9 md:w-38 md:h-30 lg:w-52 lg:h-38 xl:w-28 xl:h-auto md:flex md:justify-center md:items-center xl:text-base/5 p-1.5 bg-lg-po " +
+                        <div className={"absolute text-base/5 md:leading-8 lg:leading-9 2xl:leading-9 md:w-38 md:h-30 lg:w-52 lg:h-38 xl:w-28 xl:h-auto 2xl:w-40 2xl:h-32 md:flex md:justify-center md:items-center xl:text-base/5 p-1.5 2xl:p-2 bg-lg-po " +
                             "rounded-2xl -top-3 -right-5 lg:-top-5 lg:-right-7 w-26 min-h-20 shadow-lg shadow-indigo-400/50 rotate-8"}>
-                                <span className={"text-amber-50 text-[1rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[1.1rem] font-FingerPrint whitespace-pre-wrap"}>
+                                <span className={"text-amber-50 text-[1rem] md:text-[1.5rem] lg:text-[2rem] xl:text-[1.1rem] 2xl:text-[1.6rem] font-FingerPrint whitespace-pre-wrap"}>
                                     <i>{t('about.experience')}</i>
                                 </span>
                         </div>
