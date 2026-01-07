@@ -3,7 +3,6 @@ import {Button} from "@/Components/ui/button.tsx";
 import tattoo_1_img from "../assets/tattoo_1.jpg";
 import tattoo_2_img from "../assets/tattoo_2.jpg";
 import tattoo_3_img from "../assets/tattoo_3.jpg";
-import tattoo_4_img from "../assets/tattoo_4.jpg";
 import tattoo_5_img from "../assets/tattoo_5.jpg";
 import tattoo_6_img from "../assets/tattoo_6.jpg";
 import tattoo_7_img from "../assets/tattoo_7.jpg";
@@ -17,9 +16,9 @@ const Home = () => {
     
     return (
         <div id={"home"} className={"relative flex flex-col max-w-full justify-center items-center mt-20 scroll-mt-20 appear"}>
-            <div id={"title"} className={"pt-18 md:pt-24 max-w-[80vw] md:max-w-[85vw] lg:max-w-[70vw] xl:max-w-[55vw] xl:pt-14 2xl:pt-18 text-center"}>
-                <h1 className={"text-po text-8xl md:text-[120px] lg:text-[140px] xl:text-8xl leading-16 md:leading-22 lg:leading-25 xl:leading-16 2xl:leading-22 " +
-                    "2xl:text-9xl font-BlackKnight pb-12 pt-2 md:pb-16 md:pt-5 lg:pb-16 xl:pb-3 lg:pt-12 xl:pt-2 2xl:pb-4 2xl:pt-7"}>
+            <div id={"title"} className={"pt-18 md:pt-20 max-w-[80vw] md:max-w-[85vw] lg:max-w-[70vw] xl:max-w-[55vw] xl:pt-12 2xl:pt-16 text-center"}>
+                <h1 className={"text-po text-7xl md:text-[120px] lg:text-[140px] xl:text-8xl leading-16 md:leading-26 lg:leading-25 xl:leading-20 2xl:leading-24 " +
+                    "2xl:text-9xl font-BlackKnight pb-12 pt-2 md:pb-16 md:pt-5 lg:pb-16 xl:pb-1 lg:pt-12 xl:pt-2 2xl:pb-4 2xl:pt-7"}>
                     {t('home.title')}
                 </h1>
             </div>
