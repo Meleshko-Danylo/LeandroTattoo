@@ -43,8 +43,7 @@ function App() {
             const triggerY = window.innerHeight * 0.9;
 
             elements.forEach(el => {
-                const top = el.getBoundingClientRect().top;
-                const bottom = el.getBoundingClientRect().bottom;
+                const {top, bottom} = el.getBoundingClientRect();
 
                 const isVisible = top < triggerY && bottom > window.innerHeight * 0.2;
 
